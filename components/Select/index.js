@@ -53,7 +53,7 @@ function Select(props) {
                       {filteredItems.length === 0 && "No Results Found"}
                       {filteredItems.map((item, index) => <a key={index} style={{
                           padding: '9px 0px 9px 12px',
-                      }}  className='block py-2 h-[42px]' onClick={(e) => { 
+                      }} className='block py-2 h-[42px] cursor-pointer' onClick={(e) => { 
                          e.preventDefault();
                         setSelectedValue(item)
                         setIsOpen(false)
