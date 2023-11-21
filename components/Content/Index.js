@@ -33,9 +33,13 @@ const [selectedValue, setSelectedValue] = useState('');
           })}
         </div>
         <h2 className='pb-4 font-medium sm:pb-6 sm:text-lg'>What type of &quot;{selectedTopic}&quot; content do you want to create ?</h2>        
-        <Select list={filteredList()}  selectedValue={selectedValue} setSelectedValue={setSelectedValue}  />     
+        <div className='w-[600px] max-w-full'>
+          <Select list={filteredList()} selectedValue={selectedValue} setSelectedValue={setSelectedValue} />
+        </div>
         <h2 className='pt-8 sm:text-lg font-medium sm:pb-[36px]'>Set the number of words for output text.</h2>  
-        <RangeSlider/>
+        <div className='w-[500px] max-w-full'>
+          <RangeSlider />
+        </div>
         </div>
    </div>
   )
